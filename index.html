@@ -1,9 +1,9 @@
-<html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zack Trunzo - Cinematographer</title>
+    <title>Zack Trunzo</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -19,14 +19,13 @@
             height: 100vh;
             overflow: hidden;
         }
-        .video-header video {
+        .video-header iframe {
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
             width: 100vw;
             height: 100vh;
-            object-fit: cover;
         }
         .overlay {
             position: absolute;
@@ -48,6 +47,10 @@
         .overlay p {
             font-size: 1.5rem;
             margin-top: 1rem;
+        }
+        .overlay .location {
+            font-size: 1rem;
+            margin-top: 0.1rem;
         }
         nav {
             position: fixed;
@@ -135,12 +138,11 @@
         <a href="#contact">Contact</a>
     </nav>
     <div class="video-header">
-        <video autoplay loop muted>
-            <source src="https://dl.dropboxusercontent.com/scl/fi/chojox8qjszkuy1i8rp4x/zackvideoreel.mp4?rlkey=tt8pefc5wlg2ok38exnnjr6gq&st=5tf6j7yg&dl=0" type="video/mp4">
-        </video>
+        <iframe src="https://player.vimeo.com/video/576555622?autoplay=1&loop=1&muted=1" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
         <div class="overlay">
             <h1>Zack Trunzo</h1>
-            <p>Cinematographer based in Sault Ste. Marie, Ontario</p>
+            <p>Cinematographer & Photographer</p>
+            <p class="location">Sault Ste. Marie, Ontario</p>
         </div>
     </div>
     <div class="container">
@@ -150,12 +152,14 @@
         </section>
         <section id="projects">
             <h2>Projects</h2>
-            <p>One of my recent works includes "Creator Economy," a feature-length documentary that explores the lives of three Algoma-based content creators with large social media followings.</p>
-            <p>I have also collaborated on various commercial promotions, including "46 Parallel."</p>
+            <p>One of my recent works includes <a href="https://www.sootoday.com/local-entertainment/local-film-shines-spotlight-on-northern-stars-of-social-media-9106132" target="_blank">"Creator Economy"</a>, a feature-length documentary that explores the lives of three Algoma-based content creators with large social media followings.</p>
+            <p>I have also collaborated on many corporate productions and commercial promotions. My work has been distributed through Village Media, APTN, TSN, and many more.</p>
         </section>
         <section id="contact">
             <h2>Contact</h2>
-            <form class="contact-form" action="mailto:zacktrunzo@gmail.com" method="post" enctype="text/plain">
+            <form class="contact-form" action="https://formsubmit.co/zacktrunzo@gmail.com" method="POST">
+                <input type="hidden" name="_captcha" value="false">
+                
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
                 
@@ -167,17 +171,6 @@
                 
                 <button type="submit">Send</button>
             </form>
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/zack-trunzo-a368a534/?originalSubdomain=ca" target="_blank">
-                    <img src="https://dl.dropboxusercontent.com/scl/fi/egzrqugk4jljmpt7hn11x/icons8-linkedin-144.png?rlkey=tohdjngecimc0fufs6944iwms&st=axrkm5te&dl=0" alt="LinkedIn">
-                </a>
-                <a href="https://www.instagram.com/zacktrunzo" target="_blank">
-                    <img src="https://dl.dropboxusercontent.com/scl/fi/o0gmqhfzt4m79ft6giihe/icons8-instagram-144.png?rlkey=od4ovp3vu9mefw0jvvmej421l&e=1&st=6n15rxh8&dl=0" alt="Instagram">
-                </a>
-                <a href="https://www.youtube.com/zacktrunzo" target="_blank">
-                    <img src="https://dl.dropboxusercontent.com/scl/fi/wnqh7zgyk5tfm42nptwf2/icons8-youtube-144.png?rlkey=1vl2scca71kdhdxm1ha7wd390&st=l4ruaxsy&dl=0" alt="YouTube">
-                </a>
-            </div>
         </section>
     </div>
     <footer>
