@@ -19,13 +19,14 @@
             height: 100vh;
             overflow: hidden;
         }
-        .video-header iframe {
+        .video-header video {
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
             width: 100vw;
             height: 100vh;
+            object-fit: cover;
         }
         .overlay {
             position: absolute;
@@ -139,7 +140,7 @@
     </nav>
     <div class="video-header">
         <video autoplay loop muted>
-            <source src="https://dl.dropboxusercontent.com/scl/fi/chojox8qjszkuy1i8rp4x/zackvideoreel.mp4?rlkey=tt8pefc5wlg2ok38exnnjr6gq&st=5tf6j7yg&dl=0" type="video/mp4">
+            <source src="https://dl.dropboxusercontent.com/scl/fi/chojox8qjszkuy1i8rp4x/zackvideoreel.mp4?rlkey=tt8pefc5wlg2ok38exnnjr6gq&dl=0" type="video/mp4">
         </video>
         <div class="overlay">
             <h1>Zack Trunzo</h1>
@@ -161,22 +162,18 @@
             <h2>Contact</h2>
             <form class="contact-form" action="https://formsubmit.co/zacktrunzo@gmail.com" method="POST">
                 <input type="hidden" name="_captcha" value="false">
-                
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
-                
                 <label for="subject">Subject:</label>
                 <input type="text" id="subject" name="subject" required>
-                
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" rows="5" required></textarea>
-                
                 <button type="submit">Send</button>
             </form>
             <div class="social-links">
-                <a href="#"><img src="https://dl.dropboxusercontent.com/scl/fi/o0gmqhfzt4m79ft6giihe/icons8-instagram-144.png?rlkey=od4ovp3vu9mefw0jvvmej421l&dl=0" alt="Instagram"></a>
-                <a href="#"><img src="https://dl.dropboxusercontent.com/scl/fi/egzrqugk4jljmpt7hn11x/icons8-linkedin-144.png?rlkey=tohdjngecimc0fufs6944iwms&dl=0" alt="LinkedIn"></a>
-                <a href="#"><img src="https://dl.dropboxusercontent.com/scl/fi/wnqh7zgyk5tfm42nptwf2/icons8-youtube-144.png?rlkey=1vl2scca71kdhdxm1ha7wd390&dl=0" alt="YouTube"></a>
+                <a href="#"><img src="https://dl.dropboxusercontent.com/s/xyz/instagram-white.png" alt="Instagram"></a>
+                <a href="#"><img src="https://dl.dropboxusercontent.com/s/xyz/linkedin-white.png" alt="LinkedIn"></a>
+                <a href="#"><img src="https://dl.dropboxusercontent.com/s/xyz/youtube-white.png" alt="YouTube"></a>
             </div>
         </section>
     </div>
